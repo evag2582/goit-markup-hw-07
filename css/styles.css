@@ -439,7 +439,7 @@ input[type='checkbox']:checked:after {
   position: absolute;
   width: 275px;
   height: 16px;
-  left: 50%;
+  left: 47%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -457,7 +457,7 @@ input[type='checkbox']:checked:after {
   position: absolute;
   width: 358px;
   height: 50px;
-  left: 50%;
+  left: 47%;
   top:2780px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -465,14 +465,27 @@ input[type='checkbox']:checked:after {
   padding: 15px 45px 15px 16px;
   background-color: var(--brand5-color);
   margin-left: 40px;
-  
+}
+.modal-form-input-suscrib2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 358px;
+  height: 50px;
+  left: 47%;
+  top: 1717px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 45px 15px 16px;
+  background-color: var(--brand5-color);
+  margin-left: 40px;
 }
 .boton-suscrib {
   position: relative;
   width: 200px;
   height: 50px;
-  left: 465px;
-  top:40px;
+  left: 415px;
+  top:42px;
   background: var(--brand2-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
