@@ -278,7 +278,8 @@ section {
 textarea:hover,
 textarea:focus,
 .modal-form-input-suscrib:hover,
-.modal-form-input-suscrib:focus {
+.modal-form-input-suscrib:focus,
+.modal-form-input-suscrib2:hover {
   border: 1px solid var(--brand2-color);
 }
 .modal-form-svg {
