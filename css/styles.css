@@ -40,13 +40,13 @@ section {
   color: var(--brand2-color);
   text-decoration: none;
 }
-.links {
+.page-header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 32px;
 }
-.links2 {
+.menu-list {
   width: 300px;
   display: inline-flex;
   align-items: center;
@@ -62,39 +62,31 @@ section {
   color: var(--brand-color);
   text-decoration: none;
 }
+.contact {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-left: 10px;
+  color: var(--brand4-color);
+  list-style: none;
+  text-decoration: none;
+  padding-right: 10px;
+}
 .link:hover,
-.contact1:hover,
-.contact2:hover,
+.contact:hover,
 .contact3:hover {
   color: var(--brand2-color);
 }
 .link:focus,
-.contact1:focus,
-.contact2:focus,
+.contact:focus,
 .contact3:focus {
   color: var(--brand2-color);
 }
-.contact1:focus .icon2,
-.contact2:focus .icon-tel {
-  fill: var(--brand2-color);
-}
-.team-container2:focus {
-  background-color: var(--brand3-color);
-  border: var(--brand2-color);
-}
-.team-container2:focus .clients {
-  fill: var(--brand2-color);
-}
-.buttons:hover,
-.button1:hover {
-  background-color: var(--brand2-color);
-  color: var(--brand3-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
 .link.active,
-.button1:active,
+.button_services:active,
 .contact:active {
   color: var(--brand2-color);
 }
@@ -108,48 +100,49 @@ section {
   background: var(--brand2-color);
   box-sizing: initial;
 }
-.buttons:focus {
-  background-color: var(--brand2-color);
-  color: var(--brand3-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+.icon-mail {
+  align-items: center;
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
 }
-.contact1 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  margin-left: 10px;
-  color: var(--brand4-color);
-  list-style: none;
-  text-decoration: none;
-  padding-right: 10px;
+.icon-tel {
+  align-items: center;
+  display: inline-flex;
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
 }
-.contact2 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--brand4-color);
-  list-style: none;
-  text-decoration: none;
+.contact:focus .icon-mail,
+.contact:focus .icon-tel {
+  fill: var(--brand2-color);
 }
-.contact3 {
-  width: 231px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+.contact:hover .icon-mail,
+.contact:hover .icon-tel {
+  fill: var(--brand2-color);
 }
-.title1 {
+.background-title {
+  display: flex;
+  padding-bottom: 94px;
+  width: 100%;
+  height: 600px;
+  left: -4px;
+  top: 80px;
+  background: var(--brand5-color);
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(196, 196, 196, 0.4)),
+    url('../images/bgimage.jpg');
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.title_primary{
   max-width: 696px;
   max-height: 120px;
   font-family: 'Roboto';
@@ -162,10 +155,7 @@ section {
   text-transform: uppercase;
   color: var(--brand3-color);
 }
-.services {
-  justify-content: center;
-}
-.button1 {
+.button_services {
   width: 261px;
   height: 50px;
   font-style: normal;
@@ -183,14 +173,16 @@ section {
   color: var(--brand3-color);
   border: none;
 }
-.bgbutton1 {
-  width: auto;
-  height: 50px;
-  left: 700px;
-  top: 448px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.backdrop {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0px;
+  top: 0px;
+  width: 1600px;
+  height: 1024px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -209,17 +201,6 @@ section {
   border-radius: 4px;
   padding: 40px;
 }
-.backdrop {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  left: 0px;
-  top: 0px;
-  width: 1600px;
-  height: 1024px;
-  background: rgba(0, 0, 0, 0.2);
-  display: flex;
-}
 .modal-close {
   box-sizing: border-box;
   position: absolute;
@@ -233,6 +214,13 @@ section {
   padding-top: 6px;
   padding-left: 5px;
   align-items: center;
+}
+.modal-form-svg-close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 6px;
+  left: 5px;
 }
 .title-modal {
   width: 448px;
@@ -263,6 +251,9 @@ section {
   padding: 12px;
   margin-bottom: 4px;
 }
+.modal-form-input-group {
+  position: relative;
+}
 .modal-form-input {
   display: block;
   width: 100%;
@@ -273,6 +264,7 @@ section {
   padding-left: 40px;
   font-size: 50%;
 }
+
 .modal-form-input:focus,
 .modal-form-input:hover,
 textarea:hover,
@@ -282,6 +274,7 @@ textarea:focus,
 .modal-form-input-suscrib2:hover {
   border: 1px solid var(--brand2-color);
 }
+
 .modal-form-svg {
   width: 18px;
   height: 18px;
@@ -289,24 +282,55 @@ textarea:focus,
   top: 14px;
   left: 15px;
 }
-.modal-form-svg-close {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 6px;
-  left: 5px;
-}
-.modal-form-input:hover + .modal-form-svg,
-.modal-form-input:focus + .modal-form-svg {
+
+.modal-form-input:hover+.modal-form-svg,
+.modal-form-input:focus+.modal-form-svg {
   fill: var(--brand2-color);
 }
+
 .modal-close:hover,
 .modal-close:focus {
   fill: var(--brand2-color);
 }
-.modal-form-input-group {
-  position: relative;
+
+
+.team-container2:focus {
+  background-color: var(--brand3-color);
+  border: var(--brand2-color);
 }
+.team-container2:focus .clients {
+  fill: var(--brand2-color);
+}
+.buttons:hover{
+  background-color: var(--brand2-color);
+  color: var(--brand3-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.buttons:focus {
+  background-color: var(--brand2-color);
+  color: var(--brand3-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.contact3 {
+  width: 231px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.services {
+  justify-content: center;
+}
+
+
+
 textarea {
   resize: none;
   font-family: inherit;
@@ -621,22 +645,6 @@ input[type='checkbox']:checked:after {
 .social-container:focus .icon {
   fill: var(--brand3-color);
 }
-.icon2 {
-  align-items: center;
-  display: inline-flex;
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-  margin-right: 10px;
-}
-.icon-tel {
-  align-items: center;
-  display: inline-flex;
-  width: 10px;
-  height: 16px;
-  fill: #757575;
-  margin-right: 10px;
-}
 .team-container {
   display: flex;
   justify-content: center;
@@ -690,10 +698,6 @@ input[type='checkbox']:checked:after {
 
 .social-container2:focus .icon3 {
   fill: var(--brand3-color);
-}
-.contact1:hover .icon2,
-.contact2:hover .icon-tel {
-  fill: var(--brand2-color);
 }
 .team-container2 {
   display: inline-flex;
@@ -775,26 +779,7 @@ input[type='checkbox']:checked:after {
   border-radius: 0px 0px 4px 4px;
   margin: 20px;
 }
-.top {
-  display: flex;
-  padding-bottom: 94px;
-  width: 100%;
-  height: 600px;
-  left: -4px;
-  top: 80px;
-  background: var(--brand5-color);
-  align-items: center;
-  text-align: center;
-  background-image: linear-gradient(
-      to top,
-      rgba(47, 48, 58, 0.4),
-      rgba(196, 196, 196, 0.4)
-    ),
-    url('../images/bgimage.jpg');
-  background-size: cover;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
+
 .top2 {
   width: 100%;
   background: var(--brand3-color);
