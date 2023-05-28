@@ -250,7 +250,7 @@ textarea {
   color: var(--brand-black);
   text-transform: none;
 }
-.name {
+.backdrop__modal-name {
   display: flex;
   width: 44px;
   height: 14px;
@@ -267,7 +267,7 @@ textarea {
   padding: 12px;
   margin-bottom: 4px;
 }
-.modal-form-input-group {
+.backdrop__modal-group {
   position: relative;
 }
 .modal-form-input {
@@ -301,7 +301,7 @@ textarea:focus,
   fill: var(--brand-blue);
 }
 
-.modal-form-textarea {
+.backdrop__modal-textarea {
   width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -312,7 +312,7 @@ textarea:focus,
   padding-right: 16px;
 }
 
-.content-checkbox {
+.backdrop__modal-content {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -352,7 +352,7 @@ input[type='checkbox']:after {
 input[type='checkbox']:checked:after {
   display: block;
 }
-.check {
+.backdrop__modal-check {
   display: flex;
   width: 400.62px;
   height: 24px;
@@ -367,7 +367,7 @@ input[type='checkbox']:checked:after {
   color: var(--brand-gray);
   text-align: justify;
 }
-.form-button {
+.backdrop__modal-button {
   padding: 10px 75px 10px 75px;
   color: var(--brand-white);
   background: #188ce8;
@@ -377,7 +377,7 @@ input[type='checkbox']:checked:after {
   margin-bottom: 50%;
   border: none;
 }
-.ours_services {
+.ours-services {
   display: flex;
   font-style: normal;
   font-weight: 700;
@@ -386,7 +386,7 @@ input[type='checkbox']:checked:after {
   letter-spacing: 0.03em;
   color: var(--brand-black);
 }
-.text {
+.ours-services__text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -397,7 +397,7 @@ input[type='checkbox']:checked:after {
   margin-left: 1px;
   width: 270px;
 }
-.titles-team,
+.dedicate,
 .titles-clients {
   font-style: normal;
   font-weight: 700;
