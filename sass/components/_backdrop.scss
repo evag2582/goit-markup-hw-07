@@ -8,6 +8,8 @@
   height: 1024px;
   background: rgba(0, 0, 0, 0.2);
   display: flex;
+  
+  
   .backdrop__modal {
     position: absolute;
     width: 528px;
@@ -19,6 +21,7 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+    
   }
 
   .backdrop__modal-close {
@@ -34,6 +37,7 @@
     padding-top: 6px;
     padding-left: 5px;
     align-items: center;
+    
   }
 
   .backdrop__modal-closesvg {
@@ -42,6 +46,7 @@
     position: absolute;
     top: 6px;
     left: 5px;
+    
   }
 
   .backdrop__modal-close:hover,
@@ -60,6 +65,7 @@
     letter-spacing: 0.03em;
     color: var(--brand-black);
     text-transform: none;
+    
   }
 
   .backdrop__modal-name {
@@ -78,6 +84,7 @@
     text-align: left;
     padding: 12px;
     margin-bottom: 4px;
+    
   }
 
   .backdrop__modal-group {
@@ -92,6 +99,7 @@
       outline: none;
       padding-left: 40px;
       font-size: 50%;
+      
   }
 
   .modal-form-input:focus,
@@ -110,6 +118,7 @@
       position: absolute;
       top: 14px;
       left: 15px;
+      
   }
 
   .modal-form-input:hover+.modal-form-svg,
@@ -133,6 +142,7 @@
       align-items: center;
       gap: 4px;
       padding-bottom: 25px;
+      
   }
 
   input[type='checkbox']:checked {
@@ -195,9 +205,10 @@
       margin-bottom: 50%;
       border: none;
   }
+  
 }
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+        .is-hidden {
+          visibility: hidden;
+          opacity: 0;
+          pointer-events: none;
+        }
