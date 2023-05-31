@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-evenly;
   box-sizing: border-box;
+
   .menu-list__link {
     font-style: normal;
     font-weight: 500;
@@ -13,15 +14,18 @@
     color: var(--brand-black);
     text-decoration: none;
   }
+
   .menu-list__link:hover {
     color: var(--brand-blue);
   }
+
   .menu-list__link:focus {
     color: var(--brand-blue);
   }
   .menu-list__link.active {
     color: var(--brand-blue);
   }
+
   .menu-list__link.active::after {
     position: relative;
     display: block;
@@ -33,4 +37,3 @@
     box-sizing: initial;
   }
 }
-

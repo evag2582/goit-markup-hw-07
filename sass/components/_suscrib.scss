@@ -1,22 +1,23 @@
 .suscrib {
-    position: absolute;
-    width: 275px;
-    height: 16px;
-    left: 47%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--brand-white);
-    margin-top: 15px;
-    margin-left: 40px;
-    margin-bottom: 20px;
+  position: absolute;
+  width: 275px;
+  height: 16px;
+  left: 47%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-white);
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
-.suscrib__modal-suscrib {
+.suscrib__modal {
+  .suscrib__modal-suscrib {
     box-sizing: border-box;
     position: absolute;
     width: 358px;
@@ -29,9 +30,8 @@
     padding: 15px 45px 15px 16px;
     background-color: var(--brand5-color);
     margin-left: 40px;
-}
-
-.suscrib__botton {
+  }
+  .suscrib__botton {
     position: relative;
     width: 200px;
     height: 50px;
@@ -50,18 +50,18 @@
     letter-spacing: 0.06em;
     color: var(--brand-white);
     padding: 10px;
-    
-}
+  }
 
-.suscrib_svg {
+  .suscrib_svg {
     position: absolute;
     width: 24px;
     height: 24px;
     left: 75.31%;
     right: 15.19%;
     background: var(--brand-blue);
-}
-.suscrib__modal-form {
+  }
+
+  .suscrib__modal-form {
     box-sizing: border-box;
     position: absolute;
     width: 358px;
@@ -74,4 +74,5 @@
     padding: 15px 45px 15px 16px;
     background-color: var(--brand5-color);
     margin-left: 40px;
+  }
 }
